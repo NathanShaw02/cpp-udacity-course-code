@@ -9,6 +9,7 @@
 
 #include <iostream> //retrieves the iostream library
 #include <string> //includes the string library
+#include <iomanip> // includes the input output manipulation library
 
 int main(){ //initialises the main function and asks for an int to be returned
 
@@ -25,5 +26,8 @@ int main(){ //initialises the main function and asks for an int to be returned
 
     std::cout<< sizeof(int)<<"\n"<< sizeof(short)<<"\n"<< sizeof(long)<<"\n"<< sizeof(char)<<"\n"<< sizeof(float)<<"\n"<< sizeof(double)<<"\n"<< sizeof(bool)<<"\n";
 
+    std::cout<<std::setw(10)<<"Hi"<<std::setw(10)<<"this"<<std::setw(10)<<"is"<<std::setw(10)<<"width"<<std::setw(10)<<10<<"\n";
+    std::cout<<std::setw(10)<<"Hiiiiiiiii"<<std::setw(10)<<"this"<<std::setw(10)<<"is"<<std::setw(10)<<"width"<<std::setw(10)<<10;
 
+    return 0;
 }
